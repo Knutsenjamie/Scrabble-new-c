@@ -35,5 +35,13 @@ namespace ScrabbleGame.Test
             bool result = newScrabble.PlayerWordToArray(player1Word);
             Assert.AreEqual(true, result);
         }
+        [TestMethod]
+        public void PlayerWordScore_ReturnPlayerWordScore_Int()
+        {
+            string player1Word = "PLANT";
+            Scrabble newScrabble = new Scrabble(player1Word);
+            int result = newScrabble.PlayerWordScore();
+            Assert.AreEqual(7, result);
+        }
     }
 }
