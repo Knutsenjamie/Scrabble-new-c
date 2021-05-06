@@ -40,7 +40,7 @@ namespace ScrabbleGame.Test
         {
             string player1Word = "PLANT";
             Scrabble newScrabble = new Scrabble(player1Word);
-            int result = newScrabble.PlayerWordScore();
+            int result = newScrabble.PlayerWordScore(player1Word);
             Assert.AreEqual(7, result);
         }
     }
